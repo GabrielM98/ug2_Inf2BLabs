@@ -1,0 +1,69 @@
+--- Intro to Matlab ---
+
+    >> help power
+
+    - Returns what function does.
+
+    >> who
+
+    - Displays list of variables in workspace
+
+--- Vectors  ---
+
+    - An array is simply a row vector, in order to create a column vector use
+      the tranpose operator '
+
+    - Alternatively you can break columns up using a semi-colon like so...
+
+      v = [5 0; 2 1]
+
+    - The above would be a 2x2 matrix. Where 5 0 would be the first row.
+
+    - Useful vector operations:
+        -> dot(v,w)
+        -> cross(v,w)
+        -> norm(v)
+
+--- Matrices ---
+
+    - The transpose operator ' also works on matrices.
+
+    - Useful matrix operations:
+        -> inv(a)
+        -> det(a)
+        -> norm(a)
+        -> sum(a) % computes the sum of each col
+        -> mean(a) % computes the mean of each col
+
+    >> size(m)
+
+    - Will return the size of the matrix in rows and columns. So in this case 2 2.
+      Using a second argument such as size(m,1) will give you the size of the matrix
+      in terms of rows.
+
+    >> eye(3,2)
+
+    - Will create a 3x2 identity matrix. A zero matrix can be created in a similiar
+      fashion using the command "zero(r,c)". You can also create a ones matrix.
+
+    >> m.*n
+
+    - Multiplies m by n element-wise. As if m is 3x3 and n is 2x3 matrix multiplication
+      would not be possible.
+
+    >> m(2,3)
+
+    - Returns the i,jth element of the matrix m.
+
+    >> m(2:3,1:2)
+
+    - Selects a sub matrix containing rows 2 and 3 and cols 1 and 2. A colon on its own
+      selects all rows (or cols)
+
+    >> reshape(m,1,9)
+
+    - Reshapes matrix (or vector) m to have r rows and c columns
+
+    >> repmat(mu, R, C)
+
+    - Replicates the vector mu as a new matrix of size RxC

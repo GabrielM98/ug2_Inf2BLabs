@@ -1,0 +1,14 @@
+--- Plotting graphs ---
+
+    >> x = (1:0.01:5);
+    >> plot(x, sin(x*pi))
+
+    - Plots a set of points from 1 to 5 with spacing .01 on the x axis and the
+      sin(x*pi) on the y axis. Adding a third argument can be used to specify
+      line colour and style.    
+
+    Other useful commands:
+        -> title()
+        -> xlabel()
+        -> ylabel()
+        -> legend()

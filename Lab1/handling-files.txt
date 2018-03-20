@@ -1,0 +1,17 @@
+--- Handling data and files ---
+
+    >> save test.mat
+
+    - Saves all variables in the workspace to the file test.mat
+
+    >> load test.mat
+
+    - Loads variables into workspace
+
+    >> dlmwrite('data.txt', test_data, 'delimiter', '\t')
+
+    - Writes the test_data matrix to data.txt using a tab delimiter
+
+    >> A = importdata(filename,delimiterIn,headerlinesIn)
+
+    - Loads data from file to matrix A 

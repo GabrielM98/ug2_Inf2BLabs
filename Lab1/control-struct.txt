@@ -1,0 +1,16 @@
+--- Control structures ---
+
+    >> for (i=1:5)
+         i
+       end
+
+    - Repeats 5 times and prints i to console. Alternatively you can specify an
+      array to iterate over such as points = [3 2 4]
+
+    >> if k > m
+         j = -1
+       else
+         j = 1
+       end
+
+    - Fairly self explanatory.
