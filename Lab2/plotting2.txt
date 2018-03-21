@@ -1,0 +1,41 @@
+--- More notes on plotting ---
+
+    - After creating a figure it is possible to add some properties
+
+    >> axis([-1, 11, -1, 11])
+
+    - Sets the axis limits for x and y
+
+    >> xlabel('Movie 4')
+
+    - Sets the label for the x axis, same can be done for y axis
+
+    >> hold on
+
+    - Allows us to then add another plot on top of the figure we have already created
+
+--- Adding labels to data points ---
+
+    - Let's say you have a list of 3 movies...
+
+    >> a = {'M1','M2','M3'}
+
+    - The labels are given in a 1x3 cell array
+
+    >> dx = 0.1; dy = 0.3;
+    >> text(x+dx, y+dy, a);
+
+    - Adds the cell array item corresponding to each data point.
+
+    - The displacement is given so that the text does not overlay the
+      data points
+
+-- Adding legend ---
+
+    - This is done in a similar way to labels
+
+    >> data_names = {'Cr 1', 'Cr 2', 'Cr 3'}
+    >> legend(data_names, 'Location','southeast')
+
+    - Legend is created using labels from data_names cell array. The 2nd and 3rd argument indicate
+      the location of the legend on the graph.
