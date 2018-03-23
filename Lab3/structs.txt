@@ -1,0 +1,15 @@
+--- Structs ---
+
+    - A structure array is a data type that groups related data using data containers
+      called fields.
+
+    - Data from each field can be accessed using structName.fieldName
+
+    - Importing data from a file can be returned as a scalar structure array depending
+      on the characteristics of the file. This structure array can take on the following
+      fields:
+
+          -> data
+          -> textdata - includes colheaders and rowheaders
+          -> colheaders
+          -> rowheaders

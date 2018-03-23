@@ -1,0 +1,24 @@
+--- More on matrices ---
+
+    >> [tmp, ridx] = sort(V, 1, 'descend')
+
+    - Sorts the matrix V in descending order by the 1st dim. Tmp is the sorted out
+      matrix and ridx specifies the order in which each element is rearranged.
+
+    >> V = V(ridx)
+
+    - Creates a new matrix V from the existing matrix V by extracting the elements
+      specified in the vector ridx.
+
+    - Bear in mind that the row vector ridx extracts the elements that correspond
+      to the indices of the matrix in the first dimension. This dimension goes
+      vertically (rows), like so...
+
+      1 3
+      2 4
+
+    - So the indices of each element in the 1st dim correspond with the elements
+      in this 2x2 matrix.
+
+    - Note however that you cannot extract elements in 2 dimensions by specifying
+      a vector.
