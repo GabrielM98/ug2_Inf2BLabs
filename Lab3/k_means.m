@@ -8,7 +8,7 @@ for i = 1:100
     % Compute squared Euclidean distances (ie. the squared distance)
     % between each cluster centre and each observation
     for c = 1:K
-        D(c, :) = square_dist(A, centres(c, :));
+        D(c, :) = square_dist(A, centres(c, :)); % Creates row vector for each cluster centre
     end
 
     % Assign data to clusters
